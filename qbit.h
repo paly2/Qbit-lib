@@ -23,9 +23,9 @@ class Qbit {
 	Qbit& operator&=(Qbit const& qbit); // "AND" quantum logic operator
 	Qbit& operator^=(Qbit const& qbit); // "XOR" quantum logic operator
 	
-	bool all_high(); // Returns true if qbit is completely high (it's impossible to get low if you read it)
-	bool all_low(); // Returns true if qbit is completely low (it's impossible to get high if you read it)
-	bool check(bool (*function)(STATE)); // Check the return of a function for all qbit, returns true if the function returns always true.
+	bool all_high() const; // Returns true if qbit is completely high (it's impossible to get low if you read it)
+	bool all_low() const; // Returns true if qbit is completely low (it's impossible to get high if you read it)
+	bool check(bool (*function)(STATE)) const; // Check the return of a function for all qbit, returns true if the function returns always true.
 	
 	private:
 	vState state;
