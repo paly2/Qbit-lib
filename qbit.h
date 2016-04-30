@@ -8,7 +8,6 @@ typedef vector<STATE> vState; // STATE vector (descriptor of a qbit)
 
 class Qbit {
 	public:
-	Qbit(); // Creates an empty qbit (neither high, nor low).
 	Qbit(STATE); // Creates a qbit with a first classic state (recommanded).
 	Qbit(vector<STATE>); // Creates a quantum qbit with vState descriptor
 	

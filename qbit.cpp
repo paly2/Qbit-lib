@@ -5,9 +5,6 @@
 
 using namespace std;
 
-Qbit::Qbit() {
-	// Do nothing
-}
 Qbit::Qbit(STATE State) {
 	state.push_back(State);
 }
